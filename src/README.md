@@ -18,12 +18,10 @@ Uma aplicação FastAPI bem simples que permite às pessoas estudantes visualiza
 2. Execute a aplicação:
 
    ```
-   python app.py
+   uvicorn src.app:app --host 0.0.0.0 --port 8000 --reload
    ```
 
-3. Abra seu navegador e acesse:
-   - Documentação da API: http://localhost:8000/docs
-   - Documentação alternativa: http://localhost:8000/redoc
+3. No VS Code, abra a aba **Ports** e use a porta `8000` para abrir a aplicação. A documentação da API fica em `/docs` e a documentação alternativa em `/redoc`.
 
 ## Endpoints da API
 
